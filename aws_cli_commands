@@ -1,0 +1,13 @@
+aws ec2 run-instances --image-id ami-0f5ee92e2d63afc18 --count 1 --instance-type t2.micro --key-name prac --security-group-ids sg-04dc8a27c4c5d9b58 --subnet-id subnet-0b2e7f2c8bc64595b  (to create a instances)
+
+aws ec2 create-tags --resources i-0d8d0039e477a02df --tags Key=Name,Value=MyInstance (to give a tag name)
+
+aws ec2 create-key-pair --key-name prac
+
+aws ec2 describe-instances
+
+aws ec2 describe-key-pairs
+
+aws ec2 delete-key-pair --key-name newly1
+
+aws ec2 terminate-instances --instance-ids i-0e8090ec6a053e22d
